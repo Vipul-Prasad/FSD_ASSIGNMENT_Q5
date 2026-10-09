@@ -1,0 +1,238 @@
+.page-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    color: #20243a;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #70758a;
+    font-size: 16px;
+}
+
+.form-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.form-card,
+.preview-card {
+    background: #fff;
+    border: 1px solid #e8eaf2;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 30px rgba(32, 36, 58, 0.06);
+}
+
+.form-card h2,
+.preview-card h2 {
+    color: #20243a;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    color: #85899b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-card .card-subtitle {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #373b50;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #dfe2ed;
+    border-radius: 9px;
+    background: #fff;
+    color: #292d40;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input,
+.form-group select {
+    height: 46px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #6675e8;
+    box-shadow: 0 0 0 3px rgba(102, 117, 232, 0.12);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.form-actions button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #6675e8;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-actions button:hover {
+    background: #5262d2;
+}
+
+/* Live Preview */
+
+.preview-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.live-badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #e5f8ed;
+    color: #18864b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.profile-avatar {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6675e8, #8e64d9);
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.preview-name {
+    color: #20243a;
+    font-size: 22px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.preview-course {
+    margin-top: 7px;
+    margin-bottom: 28px;
+    color: #6675e8;
+    text-align: center;
+    font-size: 14px;
+}
+
+.preview-details {
+    border-top: 1px solid #eceef5;
+}
+
+.detail-row {
+    padding: 17px 0;
+    border-bottom: 1px solid #eceef5;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    display: block;
+    margin-bottom: 7px;
+    color: #85899b;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-row p {
+    color: #373b50;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 800px) {
+    .form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 25px 12px;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .form-card,
+    .preview-card {
+        padding: 21px 17px;
+        border-radius: 14px;
+    }
+
+    .form-card h2,
+    .preview-card h2 {
+        font-size: 21px;
+    }
+}
