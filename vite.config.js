@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/FSD_Assignment_Q5/',
+  base: '/FSD_ASSIGNMENT_Q5/',
 })
